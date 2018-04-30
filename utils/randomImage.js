@@ -1,5 +1,6 @@
 const baseQuery = 'https://commons.wikimedia.org/w/api.php?action=query&format=json'
 
+// returns a promise that resolves to the url of a random image
 const randomImage = () => {
   const queryUrl = `${baseQuery}&list=random&rnnamespace=6`
   return fetch(queryUrl)
